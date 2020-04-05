@@ -1,4 +1,4 @@
-###引用react模版
+### 引用react模版
 + 修改package.json
   添加：devDependencies："@babel/preset-react": "^7.0.0-beta.40",
 + 修改.babelrc
