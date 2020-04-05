@@ -12,7 +12,8 @@ const rules = require("./webpack.rules.conf.js");
 let getHtmlConfig = function (name, chunks) {
 	return {
 		template: `./src/pages/${name}/index.html`,
-		filename: `${name}.html`,
+		filename: `${name}.html`,//此时编译后输入的目录文件全部在dist目录下，如果要安装src目录格式生成，此处修改为`${name}/${name}.html`
+		//此时目录结构为如果src为about/index.js,生成后为about/about.html,一般表述是'目录/index.html',则修改为`${name}/index.html`
 		// favicon: './favicon.ico',
 		// title: title,
 		inject: true,
