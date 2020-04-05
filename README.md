@@ -1,3 +1,9 @@
+###引用react模版
++ 修改package.json
+  添加：devDependencies："@babel/preset-react": "^7.0.0-beta.40",
++ 修改.babelrc
+  "presets": ["@babel/preset-env"]->"presets": ["@babel/preset-env","@babel/react"]
++ 如果已经编译过，删除node_moudles目录，重新执行 npm install或cnpm install
 ### 2019年 03-28日更新
  - 增加 npm run c page 命令，page代表页面的命名，执行后会在/src/pages/目录下自动创建page文件夹，并且在page文件夹里创建index.html，index.js ，index.scss
  - 增加动态添加入口，自动化配置页面
